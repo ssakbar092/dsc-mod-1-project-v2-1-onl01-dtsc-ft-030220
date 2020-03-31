@@ -57,10 +57,11 @@ For every credible data , we used some credible datasets, below are some of the 
 
 ```df['box_office']= df['box_office'].apply(lambda x: x.replace('$', '').replace(',', '')).astype('int64')```
 
-**Dropped Uncessary Columns **
+**Dropped Uncessary Columns**
 
-```df.drop(["id","dvd_date","currency"],axis=1,inplace=True)
-```
+```df.drop(["id","dvd_date","currency"],axis=1,inplace=True)```
+
+
 **Rearranged the columns and added titling feature in all the columns title**
 
 ```df=df[['director','writer','genre','rating','theater_date','box_office','runtime','studio','synopsis']]```
@@ -114,7 +115,7 @@ Based on the cleaned Dataset made the scatter plot for TOP 20 STUDIOS in respect
 
 ![image](https://user-images.githubusercontent.com/47164862/77980944-45513200-72ce-11ea-8d14-4d0914650452.png)
 
-**_ Universal Pictures And 20th Century Fox are the recommended Studios for production of Movies _**
+**_Universal Pictures And 20th Century Fox are the recommended Studios for production of Movies_**
 
 
 **2nd and 3rd DATASET PLOTS:**
@@ -122,7 +123,7 @@ Based on the cleaned Dataset made the scatter plot for TOP 20 STUDIOS in respect
 Movies that are produced more in specific Genres
 ![image](https://user-images.githubusercontent.com/47164862/77981812-76cafd00-72d0-11ea-9c85-2fb4819fcf9b.png)
 
-**Horror: 4, 'Mystery': 2,
+**_Horror: 4, 'Mystery': 2,
 Family: 12, Action:46, Adventure: 66, 
 'Sci-Fi': 26, 'Crime': 4, 
 'Thriller': 11, 'Drama': 15, 
@@ -130,7 +131,7 @@ Family: 12, Action:46, Adventure: 66,
 'Comedy': 23, 'Fantasy': 25, 
 'Romance': 4, 'Musical': 5, 
 'Biography': 2, 'Music': 1, 
-'Documentary': 4, 'History': 1 **
+'Documentary': 4, 'History': 1_**
 
 Average Cost in Production for the Specific Generic Movies
 
@@ -152,4 +153,4 @@ Average WorldWide Profit for Specific Generic Movies
 
 
 ## Conclusion
-**_ With the analysis above this is clear that every single aspect of details matters to make a great movie. Most importantly the Directors , Writers, Picture Quality and the Genres to have a great Revenue on a movie. With the limited data in the datasets the other factors as Release time, Actors and many other aspects are important to predict the movie Revenue. Overall with all the analysis above I would highly recommended to make a move for Adventure/ Action Movies or Fanstasy/Romantic Movies for producion based on the analysis as they would easily on an average would Net Profit for about 25 to 30 million. _**
+**_With the analysis above this is clear that every single aspect of details matters to make a great movie. Most importantly the Directors , Writers, Picture Quality and the Genres to have a great Revenue on a movie. With the limited data in the datasets the other factors as Release time, Actors and many other aspects are important to predict the movie Revenue. Overall with all the analysis above I would highly recommended to make a move for Adventure/ Action Movies or Fanstasy/Romantic Movies for producion based on the analysis as they would easily on an average would Net Profit for about 25 to 30 million._**
