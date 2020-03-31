@@ -1,17 +1,19 @@
 ## Module 1 Project
 This is the first project where the project consists of Data Analysis on some of the movies that are most trending at the Box Office and their meaningful insights that will not only assist the decision makers of the company to expediate in their progress of achieving the most trending business but also some of the investor to make a clear understanding for their profitable future investments.
 
-### -------------------------------------OUTLINE BEGINS------------------------------------- 
+## -------------------------------------OUTLINE BEGINS------------------------------------- 
 This repository consists of the following list of files
 √ A Complete Dataset Analysis on some credible information labelled in "istudent.ipynb" python file.
 √ A presentation based on Data Analysis for non-stake holders.
 √ A Blog post based on Project that gives an idea to my fellow Data Science friends
 √ A complete ReadMe.md file the gives that gives the outline of the project.
 
-### DATASET
+## DATASET
 For every credible data , we used some credible datasets, below are some of the credible datasets used to complete Data Analysis
 √ "rt.movie_info.tsv.gz"
+
 √ "imdb.title.basics.csv.gz"
+
 √ "tn.movie_budgets.csv.gz"
 
 ## Project Content
