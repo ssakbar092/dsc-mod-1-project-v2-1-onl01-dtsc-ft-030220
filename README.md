@@ -41,51 +41,49 @@ For every credible data , we used some credible datasets, below are some of the 
 1st Dataset -- "rt.movie_info.tsv.gz"
 This particular dataset is in .tsv file so had to add another command to open this file 
 
-"df=pd.read_csv("rt.movie_info.tsv.gz", sep='\t')"
+```"df=pd.read_csv("rt.movie_info.tsv.gz", sep='\t')"```
 
 Outlook of Data in all Datasets
 
-print(df.isnull().sum())
-print(df.info())
+```print(df.isnull().sum())```
+```print(df.info())```
 
 Cleaned, Sorted and Rearranged the Data into readable format
 
-df=df.dropna().dropna(axis=1)
-df=df.sort_values("box_office",ascending=False)
-df['box_office']= df['box_office'].apply(lambda x: x.replace('$', '').replace(',', '')).astype('int64')
+```df=df.dropna().dropna(axis=1)```
+```df=df.sort_values("box_office",ascending=False)```
+```df['box_office']= df['box_office'].apply(lambda x: x.replace('$', '').replace(',', '')).astype('int64')```
 
 Dropped Uncessary Columns 
 
-df.drop(["id","dvd_date","currency"],axis=1,inplace=True)
-
+```df.drop(["id","dvd_date","currency"],axis=1,inplace=True)
+```
 Rearranged the columns and added titling feature in all the columns title
 
-df=df[['director','writer','genre','rating','theater_date','box_office','runtime','studio','synopsis']]
-df.columns = map(str.title, df.columns)
+```df=df[['director','writer','genre','rating','theater_date','box_office','runtime','studio','synopsis']]```
+```df.columns = map(str.title, df.columns)```
 
 To read the complete synopsis, used a special highlight features that could read the synopsis while making sure reading the specific with the relevant Director
 
-df.style.set_properties(**{'background-color': 'linear-gradient(to bottom left, #9999ff 0%, #ff99cc 100%)',
-                           'color': 'black'})
+```df.style.set_properties(**{'background-color': 'linear-gradient(to bottom left, #9999ff 0%, #ff99cc 100%)','color': 'black'}) ```
                            
 2nd Dataset along with 3rd Dataset
-
 Creating a new DataFrame to join the tables for later data analysis
 
-new_moneybudgets=pd.DataFrame(movie_budgets['movie'])
-new_moneybudgets['Movie_Budget']= movie_budgets['production_budget']
-new_moneybudgets['National_Profit']=movie_budgets['domestic_gross']
-new_moneybudgets['WorldWide_Profit']=movie_budgets['worldwide_gross']
-new_moneybudgets['Net_Profit']=movie_budgets['worldwide_gross']-movie_budgets['production_budget']
+```new_moneybudgets=pd.DataFrame(movie_budgets['movie'])```
+```new_moneybudgets['Movie_Budget']= movie_budgets['production_budget']```
+```new_moneybudgets['National_Profit']=movie_budgets['domestic_gross']```
+```new_moneybudgets['WorldWide_Profit']=movie_budgets['worldwide_gross']```
+```new_moneybudgets['Net_Profit']=movie_budgets['worldwide_gross']-movie_budgets['production_budget']```
 
 Joined/Merged 2 Datasets with the following Command:
 
-cc_df= pd.merge(new_moneybudgets,df2,how='inner',on="movie")
-cc_df=cc_df.rename(columns={"start_year":"Year"})
+```cc_df= pd.merge(new_moneybudgets,df2,how='inner',on="movie")```
+```cc_df=cc_df.rename(columns={"start_year":"Year"})```
 
 Work on the first 100 dataset
 
-cc_df=cc_df.sort_values('Net_Profit',ascending=False).head(100)
+```cc_df=cc_df.sort_values('Net_Profit',ascending=False).head(100)```
 
 ## -------------------------------------PLOTS------------------------------------- 
 
