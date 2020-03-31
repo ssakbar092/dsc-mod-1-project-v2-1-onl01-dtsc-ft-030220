@@ -1,12 +1,16 @@
 ## Module 1 Project
 This is the first project where the project consists of Data Analysis on some of the movies that are most trending at the Box Office and their meaningful insights that will not only assist the decision makers of the company to expediate in their progress of achieving the most trending business but also some of the investor to make a clear understanding for their profitable future investments.
 
+
 ## -------------------------------------OUTLINE BEGINS------------------------------------- 
+
+
 This repository consists of the following list of files
 √ A Complete Dataset Analysis on some credible information labelled in "istudent.ipynb" python file.
 √ A presentation based on Data Analysis for non-stake holders.
 √ A Blog post based on Project that gives an idea to my fellow Data Science friends
 √ A complete ReadMe.md file the gives that gives the outline of the project.
+
 
 ## DATASET
 
@@ -17,6 +21,7 @@ For every credible data , we used some credible datasets, below are some of the 
 √ "imdb.title.basics.csv.gz"
 
 √ "tn.movie_budgets.csv.gz"
+
 
 ## QUESTIONS CONSIDERED WHILE ANALYSING THE DATA
 
@@ -82,11 +87,12 @@ Work on the first 100 dataset
 
 cc_df=cc_df.sort_values('Net_Profit',ascending=False).head(100)
 
-## ------------------------- PLOTS -------------------------
+## -------------------------------------PLOTS------------------------------------- 
 
 1st DATASET PLOTS:
                            
 Based on the cleaned Dataset made the plot for TOP 10 DIRECTORS in respect to Revenue in movies
+
 
 ![image](https://user-images.githubusercontent.com/47164862/77980338-a8da6000-72cc-11ea-9433-b4ea32e3e7df.png)
 
@@ -97,19 +103,23 @@ Based on the cleaned Dataset made the scatter plot for TOP 20 STUDIOS in respect
 
 2nd and 3rd DATASET PLOTS:
 
+
 Movies that are produced more in specific Genres
 ![image](https://user-images.githubusercontent.com/47164862/77981812-76cafd00-72d0-11ea-9c85-2fb4819fcf9b.png)
 
 Average Cost in Production for the Specific Generic Movies
 
+
 ![image](https://user-images.githubusercontent.com/47164862/77982290-9878b400-72d1-11ea-9fb0-a2fc693ef1ee.png)
 
 Average National Profit for the Specific Genric Movies
+
 
 ![image](https://user-images.githubusercontent.com/47164862/77982353-c52ccb80-72d1-11ea-8e0f-728217364b76.png)
 
 
 Average WorldWide Profit for Specific Generic Movies
+
 
 ![image](https://user-images.githubusercontent.com/47164862/77982494-150b9280-72d2-11ea-83e5-d8808023a238.png)
 
