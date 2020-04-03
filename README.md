@@ -153,4 +153,7 @@ Average WorldWide Profit for Specific Generic Movies
 
 
 ## Conclusion
-**_With the analysis above this is clear that every single aspect of details matters to make a great movie. Most importantly the Directors , Writers, Picture Quality and the Genres to have a great Revenue on a movie. With the limited data in the datasets the other factors as Release time, Actors and many other aspects are important to predict the movie Revenue. Overall with all the analysis above I would highly recommended to make a move in for Adventure/ Action Movies or Fanstasy/Romantic Movies for producion based on the analysis as they would easily on an average would Net Profit for about 250 to 300 million._**
+**_With the analysis above this is clear that every single aspect of details matters to make a great movie. Most importantly the Directors , Writers, Picture Quality and the Genres to have a great Revenue on a movie. With the limited data in the datasets the other factors as Release time, Actors and many other aspects are important to predict the movie Revenue. Overall with all the analysis above I would highly recommended to make a move in for 
+.>Adventure/ Action Movies or >Fanstasy/Romantic Movies for producion based on the analysis
+.>Name fame director at a mid level budget like "Chris Columbus" or "Joel Zwick" as they are good to start the movie production with.
+.> Recommend Universal Studios and Fox studios to start up with the projects they would easily on an average would Net Profit for about 250 to 300 million._**
